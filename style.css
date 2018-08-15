@@ -1,15 +1,11 @@
 * {
 	box-sizing: border-box;
 	font-family: Helvetica;
-	font-size: 20px;
+	font-size: 15px;
 	text-decoration: none;
 	list-style: none;
 	color: #707070;
 
-}
-
-html {
-	font-size: 15px;
 }
 
 .container {
@@ -68,6 +64,7 @@ p {
 .header-nav a {
 	font-size: 1.3rem;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	cursor: pointer;
 }
 .header-nav a:hover {
 	color: #FAA401;
@@ -77,8 +74,15 @@ p {
 	color: #FAA401;
 }
 
+.menu-trigger {
+  display: none;
+}
 
-/* ----- section home ----- */
+.global-menu .nav-li a{
+  display: none;
+}
+
+/* ----- home ----- */
 #home h1 {
 	text-align: center;
 	font-family: Georgia, Times, "Times New Roman", serif;
@@ -96,7 +100,7 @@ p {
 }
 
 
-/* ----- section about ----- */
+/* ----- about ----- */
 #about ul:second-child {
 	color: white;
 }
@@ -115,7 +119,7 @@ p {
 }
 
 
-/* ----- section gallery ----- */
+/* ----- gallery ----- */
 .items {
 	width: 100%;
 	display: flex;
@@ -126,6 +130,7 @@ p {
 
 .item {
 	text-align: center;
+	width: 33%;
 }
 
 .item img {
@@ -139,7 +144,7 @@ p {
 }
 
 
-/* ----- section contact ----- */
+/* ----- contact ----- */
 #contact p {
 	display: inline;
 	padding-right: 3%;
