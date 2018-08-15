@@ -1,1 +1,3 @@
-# This is an assignment1 that using HTML and CSS
+# assignment1
+
+This is an assignment repository that using HTML and CSS
