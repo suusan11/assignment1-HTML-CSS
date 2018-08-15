@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+	font-family: Helvetica;
+	font-size: 20px;
+	text-decoration: none;
+	list-style: none;
+	color: #707070;
+
+}
+
+html {
+	font-size: 15px;
+}
+
+.container {
+	width: 80%;
+	height: 635px;
+	border: 10px solid #FEEDA3;
+	margin: 3% auto;
+	padding: 3% 5%;
+	position: relative;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: 5% 0;
+}
+
+p {
+	font-size: 1rem;
+}
+
+.copyright p {
+	margin: 50px auto 20px;
+	font-size: 1rem;
+	text-align: center;
+}
+
+/* ----- header ----- */
+.header-nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 120px;
+	height: 353px;
+	background-color: #FEEDA3;
+
+	/* ----- vertical -------
+	-webkit-writing-mode: vertical-rl;
+  	-moz-writing-mode: vertical-rl;
+  	-ms-writing-mode: tb-rl;
+  	-ms-writing-mode: vertical-rl;
+  	writing-mode: vertical-rl;
+	-------- vertical -----*/
+}
+
+.header-nav ul {
+	padding: 0;
+	text-align: center;
+	line-height: 100%;
+}
+
+.header-nav li {
+	display: block;
+	padding: 25% 0;
+}
+
+.header-nav a {
+	font-size: 1.3rem;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+.header-nav a:hover {
+	color: #FAA401;
+}
+
+.current a{
+	color: #FAA401;
+}
+
+
+/* ----- section home ----- */
+#home h1 {
+	text-align: center;
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+.top-images {
+	text-align: center;
+}
+
+.top-images img {
+	width: 15%;
+}
+
+.top-images img:hover {
+	transform: scale(1.02, 1.02);
+}
+
+
+/* ----- section about ----- */
+#about ul:second-child {
+	color: white;
+}
+#about span {
+	font-size: 2rem;
+	color: #EE6000;
+}
+
+#about h2 {
+	margin: 50px 0 10px;
+	font-size: 28px;
+}
+
+#about h2:first-letter {
+	color: #EE6000;
+}
+
+
+/* ----- section gallery ----- */
+.items {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.item {
+	text-align: center;
+}
+
+.item img {
+	width: 50%;
+	height: 50%;
+}
+
+.item p {
+	margin-top: 0;
+	margin-bottom: 20%;
+}
+
+
+/* ----- section contact ----- */
+#contact p {
+	display: inline;
+	padding-right: 3%;
+}
+
+#contact table, th, td{
+	text-align: center;
+	border: 2px solid #F5F4F4;
+	border-collapse: collapse;
+}
+
+#contact table {
+	width: 90%;
+	height: 200px;
+	margin-top: 5%;
+}
+
+#contact td {
+	font-size: 1.2rem;
+}
+
+#contact th{
+	font-size: 1.2rem;
+	background-color: #BEC8CE;
+}
+
+#contact tr:nth-child(2)>td:nth-child(1) {
+	background-color: #FAE39E;
+}
+
+#contact tr:nth-child(3)>td:nth-child(1) {
+	background-color: #BADAD2;
+}
+
+#contact tr:nth-child(4)>td:nth-child(1) {
+	background-color: #F7B798;
+}
