@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="logo.png" type="img/x-icon">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="responsive.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -21,6 +22,21 @@
 				</ul>
 			</div>
 			
+			<!-- global menu for mobile  -->
+            <a class="menu-trigger" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <nav class="global-menu">
+              <ul>
+              <li class="nav-li"><a href="home.html">home</a></li>
+              <li class="nav-li"><a href="about.html">about</a></li>
+              <li class="nav-li"><a href="gallery.html">gallery</a></li>
+              <li class="nav-li"><a href="contact.html">contact</a></li>
+              </ul>
+            </nav>
+            
 			<div class="responsive">
 				<h1>We are promise you our <span>3H</span></h1>
 
@@ -37,5 +53,18 @@
 	<div class="copyright">
 		<p>&copy; I &hearts; Ice Cream</p>
 	</div>
+
+	<script type="text/javascript">
+        $(function(){
+            $('.menu-trigger').click(function() {
+                $(this).toggleClass('active');
+                if($(this).hasClass('active')) {
+                    $('.global-menu').addClass('active');
+                } else {
+                    $('.global-menu').removeClass('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

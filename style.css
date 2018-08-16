@@ -40,14 +40,6 @@ p {
 	width: 120px;
 	height: 353px;
 	background-color: #FEEDA3;
-
-	/* ----- vertical -------
-	-webkit-writing-mode: vertical-rl;
-  	-moz-writing-mode: vertical-rl;
-  	-ms-writing-mode: tb-rl;
-  	-ms-writing-mode: vertical-rl;
-  	writing-mode: vertical-rl;
-	-------- vertical -----*/
 }
 
 .header-nav ul {
@@ -66,12 +58,21 @@ p {
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	cursor: pointer;
 }
+
 .header-nav a:hover {
 	color: #FAA401;
 }
 
 .current a{
 	color: #FAA401;
+}
+
+.menu-trigger {
+  display: none;
+}
+
+.global-menu .nav-li a{
+  display: none;
 }
 
 /* ----- home ----- */
@@ -143,6 +144,10 @@ p {
 	padding-right: 3%;
 }
 
+.contact-tool {
+	margin: 5% 0;
+}
+
 #contact table, th, td{
 	text-align: center;
 	border: 2px solid #F5F4F4;
@@ -150,7 +155,7 @@ p {
 }
 
 #contact table {
-	width: 90%;
+	width: 80%;
 	height: 200px;
 	margin-top: 5%;
 }
